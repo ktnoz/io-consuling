@@ -1,57 +1,45 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact IO Consulting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
+<header>
+    <img src="images/logo.png" alt="IO Consulting Logo" class="logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-.logo {
-    width: 150px;
-    height: auto;
-    margin-bottom: 10px;
-}
+<main>
+    <section class="hero">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you</p>
+    </section>
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
+    <section class="content">
+        <p><i class="fas fa-envelope"></i> Email: amekhrishvili@ioconsulting.com</p>
+        <p><i class="fas fa-phone"></i> Phone: +995 598 212 007 </p>
+        <p><i class="fas fa-map-marker-alt"></i> Address: Tbilisi, Georgia </p>
+        <a href="mailto:amekhrishvili@ioconsulting.com" class="btn">Send Email</a>
+    </section>
+</main>
 
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
+<footer>
+    <p>&copy; 2025 IO Consulting. All rights reserved.</p>
+</footer>
 
-nav a.active {
-    color: #0077cc;
-}
-
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #eaeaea;
-}
-
-.content {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f4f4f4;
-    margin-top: 20px;
-}
+<script src="script.js"></script>
+</body>
+</html>

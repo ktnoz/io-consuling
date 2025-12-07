@@ -1,14 +1,21 @@
-/* === General Styles === */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 nav ul {
@@ -20,37 +27,31 @@ nav ul {
     margin: 0;
 }
 
-nav ul li a {
-    color: white;
+nav a {
     text-decoration: none;
+    color: #333;
     font-weight: bold;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+nav a.active {
+    color: #0077cc;
 }
 
-main {
-    padding: 40px 20px;
+.hero {
     text-align: center;
+    padding: 50px 20px;
+    background-color: #eaeaea;
+}
+
+.content {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* === Page Titles === */
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 1.2em;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 20px;
 }
