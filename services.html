@@ -1,49 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — IO Consulting</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <img src="images/logo.png" alt="IO Consulting Logo" class="logo">
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html" class="active">Services</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+  <div class="header-wrap">
+    <div class="header">
+      <a href="index.html"><img src="images/logo.png" alt="IO Consulting" class="logo"></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
 
-<main>
+  <main>
     <section class="hero">
-        <h1>Our Services</h1>
-        <p>Expert solutions for digital transformation and security</p>
+      <div>
+        <h1>Services</h1>
+        <p>We provide a portfolio of services covering security, audits, automation and modern workplace solutions.</p>
+      </div>
+      <aside class="hero-right card">
+        <div class="kv">Tailored engagements</div>
+        <div style="color:#4b5f70">From short risk assessments to multi-year transformation programs — we scale to your needs.</div>
+      </aside>
     </section>
 
-    <section class="content">
-        <ul>
-            <li><i class="fas fa-shield-alt"></i> Information Security Consulting</li>
-            <li><i class="fas fa-search"></i> IT/IS Audit</li>
-            <li><i class="fas fa-sync-alt"></i> Digital Transformation</li>
-            <li><i class="fas fa-robot"></i> Robotic Process Automation (RPA)</li>
-            <li><i class="fas fa-headset"></i> Service Desk Implementation</li>
-            <li><i class="fas fa-laptop"></i> Modern Workplace Solutions</li>
-        </ul>
+    <section class="section">
+      <div class="grid">
+        <div class="card-service">
+          <i class="fas fa-shield-alt"></i>
+          <div><h4>Information Security Consulting</h4><p>Policy, architecture and program design to protect assets and meet compliance.</p></div>
+        </div>
+
+        <div class="card-service">
+          <i class="fas fa-list-check"></i>
+          <div><h4>IT / IS Audit</h4><p>Independent assessments and practical remediation roadmaps.</p></div>
+        </div>
+
+        <div class="card-service">
+          <i class="fas fa-robot"></i>
+          <div><h4>RPA & Automation</h4><p>Process discovery, automation design, and governance to scale bots safely.</p></div>
+        </div>
+
+        <div class="card-service">
+          <i class="fas fa-headset"></i>
+          <div><h4>Service Desk Implementation</h4><p>Design and implement modern service desks aligned to ITIL practices.</p></div>
+        </div>
+
+        <div class="card-service">
+          <i class="fas fa-laptop"></i>
+          <div><h4>Modern Workplace</h4><p>Secure collaboration, identity and endpoint management for hybrid teams.</p></div>
+        </div>
+
+        <div class="card-service">
+          <i class="fas fa-chart-line"></i>
+          <div><h4>Digital Transformation</h4><p>Strategy, delivery and change to modernize operations and customer experiences.</p></div>
+        </div>
+      </div>
     </section>
-</main>
 
-<footer>
-    <p>&copy; 2025 IO Consulting. All rights reserved.</p>
-</footer>
+  </main>
 
-<script src="script.js"></script>
+  <footer class="site-footer">
+    <div class="inner">© 2025 IO Consulting</div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,46 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact IO Consulting</title>
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — IO Consulting</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <img src="images/logo.png" alt="IO Consulting Logo" class="logo">
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+  <div class="header-wrap">
+    <div class="header">
+      <a href="index.html"><img src="images/logo.png" alt="IO Consulting" class="logo"></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
 
-<main>
+  <main>
     <section class="hero">
+      <div>
         <h1>Contact Us</h1>
-        <p>We’d love to hear from you</p>
+        <p>Ready to discuss a project or assess your security posture? Reach out and we'll respond promptly.</p>
+        <a class="btn-primary" href="mailto:info@ioconsulting.com"><i class="fas fa-envelope"></i> Email us</a>
+      </div>
+
+      <aside class="hero-right contact-card">
+        <div class="contact-row"><i class="fas fa-envelope"></i><div><strong>Email</strong><div>info@ioconsulting.com</div></div></div>
+        <div class="contact-row"><i class="fas fa-phone"></i><div><strong>Phone</strong><div>+995 598 212 007</div></div></div>
+        <div class="contact-row"><i class="fas fa-map-marker-alt"></i><div><strong>Office</strong><div> Tbilisi, Georgia </div></div></div>
+        <div style="margin-top:8px"><a class="btn-outline" href="mailto:amekhrishvili@ioconsulting.com">Send a message</a></div>
+      </aside>
     </section>
 
-    <section class="content">
-        <p><i class="fas fa-envelope"></i> Email: info@ioconsulting.com</p>
-        <p><i class="fas fa-phone"></i> Phone: +995 598 212 007</p>
-        <p><i class="fas fa-map-marker-alt"></i> Address: 123 Digital Avenue, City, Country</p>
-        <a href="mailto:amekhrishvili@ioconsulting.com" class="btn">Send Email</a>
+    <section class="section">
+      <h2 class="kv" style="margin-bottom:12px">Quick contact</h2>
+      <div class="card">
+        <form action="mailto:info@ioconsulting.com" method="post" enctype="text/plain" style="display:flex;flex-direction:column;gap:10px">
+          <input type="text" name="name" placeholder="Your name" style="padding:10px;border-radius:8px;border:1px solid #e6e9ef" required>
+          <input type="email" name="email" placeholder="Your email" style="padding:10px;border-radius:8px;border:1px solid #e6e9ef" required>
+          <textarea name="message" rows="5" placeholder="Your message" style="padding:10px;border-radius:8px;border:1px solid #e6e9ef" required></textarea>
+          <button class="btn-primary" type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+        </form>
+      </div>
     </section>
-</main>
+  </main>
 
-<footer>
-    <p>&copy; 2025 IO Consulting. All rights reserved.</p>
-</footer>
+  <footer class="site-footer">
+    <div class="inner">© 2025 IO Consulting</div>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
