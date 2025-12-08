@@ -3,69 +3,69 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Blog — IO Consulting</title>
+  <title>Insights — IO Consulting</title>
   <meta name="theme-color" content="#01132E" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header-wrap">
-    <div class="header container">
-      <a href="index.html"><img src="images/logo.png" alt="IO Consulting" class="logo"></a>
-      <nav class="nav" aria-label="Main navigation">
+    <div class="header">
+      <a href="index.html"><img src="images/logo.png" class="logo" alt="IO Consulting"></a>
+      <nav class="nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
-        <a href="blog.html">Blog</a>
+        <a href="blog.html" class="active">Blog</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <div class="controls">
+        <button class="theme-toggle" title="Toggle theme"><i class="fas fa-sun"></i></button>
+        <button class="hamburger">☰</button>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="container">
-        <span class="kicker">INSIGHTS</span>
-        <h1 class="fade-up">Thoughts on security & digital transformation</h1>
-        <p class="fade-up delay">Short articles, guides and practical notes from our team.</p>
+        <span class="kicker fade-in">INSIGHTS</span>
+        <h1 class="fade-in">Thoughts on security & transformation</h1>
+        <p class="fade-in delay">Short guides, case notes and practical frameworks from our team.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div style="display:flex;flex-direction:column;gap:14px">
-          <article class="post fade-up">
-            <div style="flex:1">
-              <h4>How to start a pragmatic security program</h4>
-              <div class="meta">Mar 1, 2025 — by IO Consulting</div>
-              <p style="margin-top:8px;color:var(--muted)">A short playbook for leaders who need to move quickly and avoid analysis paralysis.</p>
-            </div>
-            <div style="width:110px; text-align:right">
-              <a class="btn" href="#">Read</a>
-            </div>
-          </article>
+        <article class="post fade-in">
+          <div style="flex:1">
+            <h4>How to start a pragmatic security program</h4>
+            <div class="meta" style="color:rgba(255,255,255,0.7)">Mar 1, 2025 — IO Consulting</div>
+            <p style="margin-top:8px;color:rgba(255,255,255,0.82)">A short playbook for leaders who need to move quickly and avoid analysis paralysis.</p>
+          </div>
+          <div style="width:110px;text-align:right">
+            <a class="btn" href="#">Read</a>
+          </div>
+        </article>
 
-          <article class="post fade-up delay">
-            <div style="flex:1">
-              <h4>RPA: quick wins that don't break your IT</h4>
-              <div class="meta">Feb 12, 2025 — by IO Consulting</div>
-              <p style="margin-top:8px;color:var(--muted)">How we identify low-risk, high-value automation candidates.</p>
-            </div>
-            <div style="width:110px; text-align:right">
-              <a class="btn" href="#">Read</a>
-            </div>
-          </article>
-
-          <p style="color:var(--muted); margin-top:6px">More posts coming soon — follow us for updates.</p>
-        </div>
+        <article class="post fade-in delay">
+          <div style="flex:1">
+            <h4>RPA: quick wins that don't break your IT</h4>
+            <div class="meta" style="color:rgba(255,255,255,0.7)">Feb 12, 2025 — IO Consulting</div>
+            <p style="margin-top:8px;color:rgba(255,255,255,0.82)">How we identify low-risk, high-value automation candidates.</p>
+          </div>
+          <div style="width:110px;text-align:right">
+            <a class="btn" href="#">Read</a>
+          </div>
+        </article>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container footer-inner">
+    <div class="footer-inner">
       <p>&copy; 2025 IO Consulting</p>
-      <p><a href="contact.html" style="color:var(--gold-soft)">Contact us</a></p>
+      <p><a href="contact.html" style="color:var(--gold-3)">Contact</a></p>
     </div>
   </footer>
 

@@ -10,49 +10,53 @@
 </head>
 <body>
   <header class="header-wrap">
-    <div class="header container">
-      <a href="index.html"><img src="images/logo.png" alt="IO Consulting" class="logo"></a>
-      <nav class="nav" aria-label="Main navigation">
+    <div class="header">
+      <a href="index.html"><img src="images/logo.png" class="logo" alt="IO Consulting"></a>
+      <nav class="nav">
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <a href="about.html" class="active">About</a>
         <a href="services.html">Services</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <div class="controls">
+        <button class="theme-toggle" title="Toggle theme"><i class="fas fa-sun"></i></button>
+        <button class="hamburger">☰</button>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="container">
-        <span class="kicker">OUR STORY</span>
-        <h1 class="fade-up">About IO Consulting</h1>
-        <p class="fade-up delay">A multidisciplinary collective delivering secure, elegant and practical digital transformations.</p>
+        <span class="kicker fade-in">OUR STORY</span>
+        <h1 class="fade-in">About IO Consulting</h1>
+        <p class="fade-in delay">A multidisciplinary collective delivering secure, elegant and practical digital transformations.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
         <div class="card-grid">
-          <div class="card fade-up">
-            <h3>Our Mission</h3>
-            <p>To optimize operations, reduce costs and enhance agility with technology, automation and best-practice governance.</p>
+          <div class="card fade-in">
+            <h3>Mission</h3>
+            <p>To optimize operations, reduce costs and enhance agility through technology, automation and governance.</p>
           </div>
 
-          <div class="card fade-up delay">
-            <h3>Our Approach</h3>
-            <p>We combine technical depth, operational experience and stakeholder-centred change management to deliver measurable results.</p>
+          <div class="card fade-in delay">
+            <h3>Approach</h3>
+            <p>Clear assessment → pragmatic roadmap → iterative delivery with measurable KPIs.</p>
           </div>
 
-          <div class="card fade-up">
-            <h3>Our Team</h3>
-            <p>Practitioners with backgrounds in security, cloud, automation, and enterprise service design.</p>
+          <div class="card fade-in">
+            <h3>Team</h3>
+            <p>Experienced practitioners in security, cloud, automation and service operations.</p>
           </div>
         </div>
 
-        <div style="margin-top:28px" class="fade-up delay">
-          <h3>Core Values</h3>
-          <ul style="list-style:disc; padding-left:20px; color:var(--muted)">
+        <div style="margin-top:26px" class="fade-in delay">
+          <h3>Values</h3>
+          <ul style="color:rgba(255,255,255,0.82);margin-top:8px">
             <li>Integrity & transparency</li>
             <li>Pragmatic excellence</li>
             <li>Client-focused outcomes</li>
@@ -63,9 +67,9 @@
   </main>
 
   <footer>
-    <div class="container footer-inner">
+    <div class="footer-inner">
       <p>&copy; 2025 IO Consulting</p>
-      <p><a href="contact.html" style="color:var(--gold-soft)">Contact us</a></p>
+      <p><a href="contact.html" style="color:var(--gold-3)">Contact</a></p>
     </div>
   </footer>
 

@@ -10,54 +10,68 @@
 </head>
 <body>
   <header class="header-wrap">
-    <div class="header container">
-      <a href="index.html"><img src="images/logo.png" alt="IO Consulting" class="logo"></a>
-      <nav class="nav" aria-label="Main navigation">
+    <div class="header">
+      <a href="index.html"><img src="images/logo.png" class="logo" alt="IO Consulting"></a>
+      <nav class="nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
       </nav>
+      <div class="controls">
+        <button class="theme-toggle" title="Toggle theme"><i class="fas fa-sun"></i></button>
+        <button class="hamburger">☰</button>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="container">
-        <span class="kicker">CONTACT</span>
-        <h1 class="fade-up">Let’s talk — we’ll listen</h1>
-        <p class="fade-up delay">Tell us about your challenge and we’ll propose a pragmatic first step.</p>
+        <span class="kicker fade-in">CONTACT</span>
+        <h1 class="fade-in">Let’s talk — we’ll listen</h1>
+        <p class="fade-in delay">Tell us about your challenge and we’ll propose a pragmatic first step.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
         <div class="card-grid">
-          <div class="card fade-up">
+          <div class="card fade-in">
             <h3>Get in touch</h3>
             <div class="contact-list" style="margin-top:12px">
               <p><i class="fas fa-envelope"></i> <a href="mailto:info@ioconsulting.com">info@ioconsulting.com</a></p>
               <p><i class="fas fa-phone"></i> +995 598 212 007</p>
-              <p><i class="fas fa-map-marker-alt"></i> Georgia, Tbilisi </p>
+              <p><i class="fas fa-map-marker-alt"></i> Georgia Tbilisi </p>
               <p style="margin-top:14px"><a class="btn" href="mailto:info@ioconsulting.com">Send an email</a></p>
             </div>
           </div>
 
-          <div class="card fade-up delay">
+          <div class="card fade-in delay">
             <h3>Office hours</h3>
             <p>Mon–Fri: 10:00–19:00</p>
-            <p style="margin-top:10px;color:var(--muted)">We respond to email within 1–2 business days.</p>
+            <p style="margin-top:10px;color:rgba(255,255,255,0.82)">We respond to email within 1–2 business days.</p>
           </div>
+        </div>
+
+        <div style="margin-top:22px" class="fade-in delay">
+          <h3>Send us a message</h3>
+          <form action="#" onsubmit="alert('This demo form is not connected — replace with Formspree or your backend.'); return false;">
+            <input type="text" placeholder="Your name" required style="background:#011E45;color:#fff;border-radius:10px;padding:12px;border:none;margin-bottom:10px;width:100%">
+            <input type="email" placeholder="Your email" required style="background:#011E45;color:#fff;border-radius:10px;padding:12px;border:none;margin-bottom:10px;width:100%">
+            <textarea placeholder="Message" rows="6" style="background:#011E45;color:#fff;border-radius:10px;padding:12px;border:none;width:100%"></textarea>
+            <div style="margin-top:12px"><button type="submit" class="btn">Send Message</button></div>
+          </form>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container footer-inner">
+    <div class="footer-inner">
       <p>&copy; 2025 IO Consulting</p>
-      <p><a href="index.html" style="color:var(--gold-soft)">Back to home</a></p>
+      <p><a href="index.html" style="color:var(--gold-3)">Back to home</a></p>
     </div>
   </footer>
 
