@@ -4,15 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>About — IO Consulting</title>
+  <meta name="theme-color" content="#01132E" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="header-wrap">
-    <div class="header">
+  <header class="header-wrap">
+    <div class="header container">
       <a href="index.html"><img src="images/logo.png" alt="IO Consulting" class="logo"></a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
@@ -20,54 +20,53 @@
         <a href="contact.html">Contact</a>
       </nav>
     </div>
-  </div>
+  </header>
 
   <main>
     <section class="hero">
-      <div>
-        <h1>About IO Consulting</h1>
-        <p>Your trusted partner in digital transformation and security. We bring technical depth and strategic insight together to deliver pragmatic, measurable outcomes.</p>
-        <a class="btn-primary" href="services.html"><i class="fas fa-briefcase"></i> View services</a>
+      <div class="container">
+        <span class="kicker">OUR STORY</span>
+        <h1 class="fade-up">About IO Consulting</h1>
+        <p class="fade-up delay">A multidisciplinary collective delivering secure, elegant and practical digital transformations.</p>
       </div>
-      <aside class="hero-right card">
-        <div style="font-weight:700; color:var(--navy-1); margin-bottom:10px">Our Approach</div>
-        <div style="color:#4b5f70">We combine governance frameworks, technical engineering and process optimization to create resilient systems that scale with your organization.</div>
-      </aside>
     </section>
 
     <section class="section">
-      <h2 class="kv" style="margin-bottom:14px">Leadership & Expertise</h2>
-      <div class="grid">
-        <div class="card-service">
-          <i class="fas fa-user-tie"></i>
-          <div>
-            <h4>Experienced leaders</h4>
-            <p>Senior consultants with enterprise experience in security, IT audits and transformation.</p>
+      <div class="container">
+        <div class="card-grid">
+          <div class="card fade-up">
+            <h3>Our Mission</h3>
+            <p>To optimize operations, reduce costs and enhance agility with technology, automation and best-practice governance.</p>
+          </div>
+
+          <div class="card fade-up delay">
+            <h3>Our Approach</h3>
+            <p>We combine technical depth, operational experience and stakeholder-centred change management to deliver measurable results.</p>
+          </div>
+
+          <div class="card fade-up">
+            <h3>Our Team</h3>
+            <p>Practitioners with backgrounds in security, cloud, automation, and enterprise service design.</p>
           </div>
         </div>
 
-        <div class="card-service">
-          <i class="fas fa-cogs"></i>
-          <div>
-            <h4>Technical excellence</h4>
-            <p>Engineers and auditors skilled in modern cloud, on-prem and hybrid environments.</p>
-          </div>
-        </div>
-
-        <div class="card-service">
-          <i class="fas fa-handshake"></i>
-          <div>
-            <h4>Partnership mindset</h4>
-            <p>Long-term collaboration to embed capability and deliver continuous improvements.</p>
-          </div>
+        <div style="margin-top:28px" class="fade-up delay">
+          <h3>Core Values</h3>
+          <ul style="list-style:disc; padding-left:20px; color:var(--muted)">
+            <li>Integrity & transparency</li>
+            <li>Pragmatic excellence</li>
+            <li>Client-focused outcomes</li>
+          </ul>
         </div>
       </div>
     </section>
-
   </main>
 
-  <footer class="site-footer">
-    <div class="inner">© 2025 IO Consulting</div>
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; 2025 IO Consulting</p>
+      <p><a href="contact.html" style="color:var(--gold-soft)">Contact us</a></p>
+    </div>
   </footer>
 
   <script src="script.js"></script>

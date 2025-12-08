@@ -4,15 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>IO Consulting — Your Digital Orbit of Confidence</title>
+  <meta name="theme-color" content="#01132E" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="header-wrap">
-    <div class="header">
+  <header class="header-wrap">
+    <div class="header container">
       <a href="index.html"><img src="images/logo.png" alt="IO Consulting" class="logo"></a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
@@ -20,69 +20,90 @@
         <a href="contact.html">Contact</a>
       </nav>
     </div>
-  </div>
+  </header>
 
   <main>
     <section class="hero">
-      <div class="hero-left">
-        <h1>Your Digital Orbit of Confidence</h1>
-        <p>IO Consulting is a forward-looking digital and information security advisory firm that empowers organizations to evolve with clarity, security, and confidence.</p>
-        <div class="cta-row">
-          <a class="btn-primary" href="contact.html"><i class="fas fa-paper-plane"></i> Get in touch</a>
-          <a class="btn-outline" href="services.html">Our Services</a>
+      <div class="container">
+        <span class="kicker">IO CONSULTING</span>
+        <h1 class="fade-up">Your Digital Orbit of Confidence</h1>
+        <p class="fade-up delay">We help organizations become more secure, efficient and resilient through Information Security, Digital Transformation and Automation.</p>
+        <div class="fade-up delay" style="margin-top:18px">
+          <a class="btn" href="about.html">Learn about our approach</a>
         </div>
       </div>
-
-      <aside class="hero-right card">
-        <div class="stat">
-          <div class="num">10+</div>
-          <div class="lbl">Years experience in security & IT</div>
-        </div>
-        <div class="stat">
-          <div class="num">50+</div>
-          <div class="lbl">Projects delivered across sectors</div>
-        </div>
-        <div style="margin-top:10px;">
-          <a class="btn-outline" href="about.html">Meet the team</a>
-        </div>
-      </aside>
     </section>
 
     <section class="section">
-      <h2 class="kv" style="margin-bottom:14px">What we do</h2>
-      <div class="grid">
-        <div class="card-service">
-          <i class="fas fa-shield-alt"></i>
-          <div>
-            <h4>Information Security Consulting</h4>
-            <p>Risk assessments, security strategy and compliance frameworks to protect your business.</p>
-          </div>
-        </div>
+      <div class="container">
+        <div class="card-grid">
+          <article class="card fade-up">
+            <div style="display:flex;align-items:center">
+              <div class="icon-wrap"><i class="fas fa-shield-alt"></i></div>
+              <div>
+                <h3>Information Security Consulting</h3>
+                <p>Risk assessments, security strategy, governance frameworks (ISO/IEC, NIST).</p>
+              </div>
+            </div>
+          </article>
 
-        <div class="card-service">
-          <i class="fas fa-search"></i>
-          <div>
-            <h4>IT/IS Audit</h4>
-            <p>Independent audits to identify gaps and prioritize remediation for secure operations.</p>
-          </div>
-        </div>
+          <article class="card fade-up delay">
+            <div style="display:flex;align-items:center">
+              <div class="icon-wrap"><i class="fas fa-search"></i></div>
+              <div>
+                <h3>IT / IS Audit</h3>
+                <p>Independent audits to strengthen controls and compliance posture.</p>
+              </div>
+            </div>
+          </article>
 
-        <div class="card-service">
-          <i class="fas fa-robot"></i>
-          <div>
-            <h4>Robotic Process Automation</h4>
-            <p>Automate repetitive processes to reduce cost and increase efficiency.</p>
-          </div>
+          <article class="card fade-up">
+            <div style="display:flex;align-items:center">
+              <div class="icon-wrap"><i class="fas fa-robot"></i></div>
+              <div>
+                <h3>Robotic Process Automation</h3>
+                <p>Automate repetitive processes to reduce cost and increase accuracy.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card fade-up delay">
+            <div style="display:flex;align-items:center">
+              <div class="icon-wrap"><i class="fas fa-laptop-code"></i></div>
+              <div>
+                <h3>Modern Workplace</h3>
+                <p>Service desk, collaboration tools, and secure cloud enablement.</p>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
+    <section class="section" style="padding-bottom:80px">
+      <div class="container">
+        <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+          <div style="flex:1;min-width:260px">
+            <h2 class="fade-up">Why organizations choose IO Consulting</h2>
+            <p class="fade-up delay">Multidisciplinary experts, pragmatic governance and practical roadmaps — we translate strategy into measurable outcomes.</p>
+            <p class="fade-up delay"><a class="btn" href="services.html">Explore Services</a></p>
+          </div>
+          <div style="flex:1;min-width:280px">
+            <div class="feature fade-up">
+              <i class="fas fa-award"></i>
+              <h4 style="margin-top:8px">Trusted Frameworks</h4>
+              <p style="color:var(--muted)">We align implementations with globally recognised standards and practical KPIs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="inner">
-      <div>© 2025 IO Consulting</div>
-      <div style="margin-top:8px; font-size:0.9rem; color:rgba(253,199,57,0.9)">Built with clarity, security and confidence</div>
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; 2025 IO Consulting</p>
+      <p style="opacity:.9">Designed with <span style="color:var(--gold-bright)">care</span> — <a href="contact.html" style="color:var(--gold-soft);text-decoration:none">Get in touch</a></p>
     </div>
   </footer>
 

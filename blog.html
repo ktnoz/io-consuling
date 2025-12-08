@@ -1,42 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - IO Consulting</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog — IO Consulting</title>
+  <meta name="theme-color" content="#01132E" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="header-wrap">
+    <div class="header container">
+      <a href="index.html"><img src="images/logo.png" alt="IO Consulting" class="logo"></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<header>
-    <img src="images/logo.png" alt="IO Consulting Logo" class="logo">
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="blog.html" class="active">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
+  <main>
     <section class="hero">
-        <h1>Blog</h1>
-        <p>Insights, tips, and news on digital transformation and security</p>
+      <div class="container">
+        <span class="kicker">INSIGHTS</span>
+        <h1 class="fade-up">Thoughts on security & digital transformation</h1>
+        <p class="fade-up delay">Short articles, guides and practical notes from our team.</p>
+      </div>
     </section>
 
-    <section class="content">
-        <p>No posts yet. Stay tuned for updates!</p>
+    <section class="section">
+      <div class="container">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <article class="post fade-up">
+            <div style="flex:1">
+              <h4>How to start a pragmatic security program</h4>
+              <div class="meta">Mar 1, 2025 — by IO Consulting</div>
+              <p style="margin-top:8px;color:var(--muted)">A short playbook for leaders who need to move quickly and avoid analysis paralysis.</p>
+            </div>
+            <div style="width:110px; text-align:right">
+              <a class="btn" href="#">Read</a>
+            </div>
+          </article>
+
+          <article class="post fade-up delay">
+            <div style="flex:1">
+              <h4>RPA: quick wins that don't break your IT</h4>
+              <div class="meta">Feb 12, 2025 — by IO Consulting</div>
+              <p style="margin-top:8px;color:var(--muted)">How we identify low-risk, high-value automation candidates.</p>
+            </div>
+            <div style="width:110px; text-align:right">
+              <a class="btn" href="#">Read</a>
+            </div>
+          </article>
+
+          <p style="color:var(--muted); margin-top:6px">More posts coming soon — follow us for updates.</p>
+        </div>
+      </div>
     </section>
-</main>
+  </main>
 
-<footer>
-    <p>&copy; 2025 IO Consulting. All rights reserved.</p>
-</footer>
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; 2025 IO Consulting</p>
+      <p><a href="contact.html" style="color:var(--gold-soft)">Contact us</a></p>
+    </div>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

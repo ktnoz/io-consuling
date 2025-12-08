@@ -4,15 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Services — IO Consulting</title>
+  <meta name="theme-color" content="#01132E" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="header-wrap">
-    <div class="header">
+  <header class="header-wrap">
+    <div class="header container">
       <a href="index.html"><img src="images/logo.png" alt="IO Consulting" class="logo"></a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
@@ -20,58 +20,93 @@
         <a href="contact.html">Contact</a>
       </nav>
     </div>
-  </div>
+  </header>
 
   <main>
     <section class="hero">
-      <div>
-        <h1>Services</h1>
-        <p>We provide a portfolio of services covering security, audits, automation and modern workplace solutions.</p>
+      <div class="container">
+        <span class="kicker">SERVICES</span>
+        <h1 class="fade-up">We design secure, efficient & resilient systems</h1>
+        <p class="fade-up delay">From strategy to implementation — governance, automation and modern workplace solutions.</p>
       </div>
-      <aside class="hero-right card">
-        <div class="kv">Tailored engagements</div>
-        <div style="color:#4b5f70">From short risk assessments to multi-year transformation programs — we scale to your needs.</div>
-      </aside>
     </section>
 
     <section class="section">
-      <div class="grid">
-        <div class="card-service">
-          <i class="fas fa-shield-alt"></i>
-          <div><h4>Information Security Consulting</h4><p>Policy, architecture and program design to protect assets and meet compliance.</p></div>
+      <div class="container">
+        <div class="card-grid">
+          <article class="card fade-up">
+            <div style="display:flex;align-items:center">
+              <div class="icon-wrap"><i class="fas fa-shield-alt"></i></div>
+              <div>
+                <h3>Information Security Consulting</h3>
+                <p>Security strategy, architecture and risk reduction programs.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card fade-up delay">
+            <div style="display:flex;align-items:center">
+              <div class="icon-wrap"><i class="fas fa-file-signature"></i></div>
+              <div>
+                <h3>IT / IS Audit</h3>
+                <p>Practical audits that highlight risk and pragmatic remediation paths.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card fade-up">
+            <div style="display:flex;align-items:center">
+              <div class="icon-wrap"><i class="fas fa-cogs"></i></div>
+              <div>
+                <h3>Digital Transformation</h3>
+                <p>End-to-end roadmaps and delivery support for digital initiatives.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card fade-up delay">
+            <div style="display:flex;align-items:center">
+              <div class="icon-wrap"><i class="fas fa-robot"></i></div>
+              <div>
+                <h3>Robotic Process Automation (RPA)</h3>
+                <p>Automate repeatable tasks to free up human capacity for strategic work.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card fade-up">
+            <div style="display:flex;align-items:center">
+              <div class="icon-wrap"><i class="fas fa-headset"></i></div>
+              <div>
+                <h3>Service Desk Implementation</h3>
+                <p>Set up processes, tooling and training for modern support operations.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card fade-up delay">
+            <div style="display:flex;align-items:center">
+              <div class="icon-wrap"><i class="fas fa-laptop"></i></div>
+              <div>
+                <h3>Modern Workplace Solutions</h3>
+                <p>Secure, productive collaboration and endpoint management.</p>
+              </div>
+            </div>
+          </article>
         </div>
 
-        <div class="card-service">
-          <i class="fas fa-list-check"></i>
-          <div><h4>IT / IS Audit</h4><p>Independent assessments and practical remediation roadmaps.</p></div>
-        </div>
-
-        <div class="card-service">
-          <i class="fas fa-robot"></i>
-          <div><h4>RPA & Automation</h4><p>Process discovery, automation design, and governance to scale bots safely.</p></div>
-        </div>
-
-        <div class="card-service">
-          <i class="fas fa-headset"></i>
-          <div><h4>Service Desk Implementation</h4><p>Design and implement modern service desks aligned to ITIL practices.</p></div>
-        </div>
-
-        <div class="card-service">
-          <i class="fas fa-laptop"></i>
-          <div><h4>Modern Workplace</h4><p>Secure collaboration, identity and endpoint management for hybrid teams.</p></div>
-        </div>
-
-        <div class="card-service">
-          <i class="fas fa-chart-line"></i>
-          <div><h4>Digital Transformation</h4><p>Strategy, delivery and change to modernize operations and customer experiences.</p></div>
+        <div style="margin-top:26px" class="fade-up">
+          <a class="btn" href="contact.html">Talk to an expert</a>
         </div>
       </div>
     </section>
-
   </main>
 
-  <footer class="site-footer">
-    <div class="inner">© 2025 IO Consulting</div>
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; 2025 IO Consulting</p>
+      <p><a href="index.html" style="color:var(--gold-soft)">Back to home</a></p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
